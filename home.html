@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Enzo & Geovanna</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .casal-wrapper { max-width: 500px; border-radius: 24px; }
+    .casal-wrapper img {
+      height: 560px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 24px;
+    }
+    .casal-destaque {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.4rem) !important;
+      color: var(--glow-cyan) !important;
+      text-shadow: 0 0 20px rgba(0,212,255,0.4);
+      margin-bottom: 1.2rem !important;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 520px) {
+      .casal-wrapper img { height: 380px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="star-canvas"></canvas>
+  <div id="progress-bar"></div>
+
+  <header>
+    <nav class="navbar">
+      <a class="nav-logo" href="home.html">✦ Cosmos</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <p class="eyebrow">✦ Dois corações, um universo ✦</p>
+
+      <h1><span>Enzo & Geovanna</span></h1>
+
+      <div class="img-wrapper casal-wrapper">
+        <img src="casal.jpg" alt="Enzo e Geovanna">
+      </div>
+
+      <div class="text-block">
+        <p class="casal-destaque">💫 O casal mais lindo do universo 💫</p>
+        <p>Em um cosmos com bilhões de estrelas, galáxias infinitas e mistérios sem fim — nenhum fenômeno é tão extraordinário quanto dois corações que se encontram e decidem brilhar juntos.</p>
+        <p>Enzo e Geovanna provam que o universo, em toda sua imensidão, conspira a favor de quem está destinado a se amar. <strong>Vocês são a maior maravilha do cosmos.</strong> ✨</p>
+        <a href="sobre.html" class="cta-btn">Conheça nossa equipe</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="cosmos.js"></script>
+</body>
+</html>
